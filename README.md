@@ -32,6 +32,10 @@ For building and running the application you need:
 ```
 
 ### Features
+![getEmployeesByFirstNameLike](https://github.com/mehmetpekdemir/GraphQL/blob/develop/photos/getEmployeesByFirstNameLike.png)
+![getEmployeeById](https://github.com/mehmetpekdemir/GraphQL/blob/develop/photos/getEmployeeById.png)
+![createEmployee](https://github.com/mehmetpekdemir/GraphQL/blob/develop/photos/createEmployee.png)
+
 
 
 
