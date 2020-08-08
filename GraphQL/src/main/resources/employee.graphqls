@@ -1,0 +1,19 @@
+type Employee {
+    id: ID!,
+    firstName:String,
+    lastName:String
+}
+
+input EmployeeDTO {
+    firstName:String!,
+    lastName:String!
+}
+
+type Query {
+    getEmployeesByFirstNameLike(firstName:String):[Employee]
+    getEmployeeById(id:ID):Employee
+}
+
+type Mutation {
+    createEmployee(employeeDTO:EmployeeDTO):Employee
+}
