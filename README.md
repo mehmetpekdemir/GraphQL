@@ -1,6 +1,6 @@
 # GraphQL
 
-### This is a GraphQL project for Spring Boot.
+### This is a GraphQL project.
 
 ### Tech Stack
   - Java version 11
