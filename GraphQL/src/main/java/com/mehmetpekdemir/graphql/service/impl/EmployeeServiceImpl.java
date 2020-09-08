@@ -10,6 +10,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
 /**
  * 
  * @author MEHMET PEKDEMIR
@@ -21,11 +24,13 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	private final EmployeeRepository employeeRepository;
 
+	@Transactional(readOnly = true, propagation = Propagation.SUPPORTS)
 	@Override
 	public List<Employee> getByFirstNameLike(String firstName) {
 		return employeeRepository.getByFirstNameLike(firstName);
 	}
 
+	@Transactional(readOnly = true, propagation = Propagation.SUPPORTS)
 	@Override
 	public Optional<Employee> getEmployeeById(Long id) {
 		return employeeRepository.findById(id);
